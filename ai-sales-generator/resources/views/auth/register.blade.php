@@ -30,7 +30,7 @@
 
                 <div>
                     <label class="block text-sm font-semibold text-gray-300 mb-2">Full Name</label>
-                    <input type="text" name="name" value="{{ old('name') }}" required autofocus
+                    <input type="text" name="name" autocomplete="name" value="{{ old('name') }}" required autofocus
                            class="w-full px-4 py-3 bg-white/10 border border-white/10 rounded-xl text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#FF83D6] focus:border-[#FF83D6] transition-all">
                     @error('name')
                         <p class="text-red-400 text-xs mt-1">{{ $message }}</p>
@@ -39,7 +39,7 @@
 
                 <div>
                     <label class="block text-sm font-semibold text-gray-300 mb-2">Email</label>
-                    <input type="email" name="email" value="{{ old('email') }}" required
+                    <input type="email" name="email" autocomplete="email" value="{{ old('email') }}" required
                            class="w-full px-4 py-3 bg-white/10 border border-white/10 rounded-xl text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#FF83D6] focus:border-[#FF83D6] transition-all">
                     @error('email')
                         <p class="text-red-400 text-xs mt-1">{{ $message }}</p>
@@ -48,7 +48,7 @@
 
                 <div>
                     <label class="block text-sm font-semibold text-gray-300 mb-2">Password</label>
-                    <input type="password" name="password" required
+                    <input type="password" name="password" autocomplete="new-password" required
                            class="w-full px-4 py-3 bg-white/10 border border-white/10 rounded-xl text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#FF83D6] focus:border-[#FF83D6] transition-all">
                     @error('password')
                         <p class="text-red-400 text-xs mt-1">{{ $message }}</p>
@@ -57,7 +57,7 @@
 
                 <div>
                     <label class="block text-sm font-semibold text-gray-300 mb-2">Confirm Password</label>
-                    <input type="password" name="password_confirmation" required
+                    <input type="password" name="password_confirmation" autocomplete="new-password" required
                            class="w-full px-4 py-3 bg-white/10 border border-white/10 rounded-xl text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#FF83D6] focus:border-[#FF83D6] transition-all">
                 </div>
 
